@@ -1,0 +1,248 @@
+:root {
+    --main-light: #fcf8f2;
+    --main-dark: #213555;
+    --third-color: #e6f0fc;
+    --forth-color: #4F709C;
+  }
+
+/******* MAIN *******/
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/bg-img.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    padding-top: 2rem;
+    position: relative;
+    text-align: center;
+}
+.header a:hover {
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
+
+}
+.navbar {
+  background: none;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+header {
+    color: var(--main-light) !important;
+    align-items: center;
+}
+.welcome > h1 {
+    font-size: 4rem;
+}
+.welcome p {
+    font-size: 2rem;
+    padding-top: 30px;
+}
+body {
+    background-color: var(--third-color) !important;
+}
+
+/******* ABOUT ********/
+
+#about {
+    height: fit-content;
+}
+.container h2{
+    color: var(--forth-color) !important;
+    padding: 40px 0;
+}
+.container h3 {
+    color: var(--forth-color);
+}
+#about a {
+    width: 150px;
+    height: 43px;
+    font-size: 1.2rem;
+    background-color: var(--forth-color);
+    color: var(--third-color);
+    font-weight: bolder;
+    margin: 30px 0;
+    border: none;
+}
+#about a:hover{
+    border: var(--main-dark) 1px solid;
+}
+#about img {
+    width: 200px;
+    margin: 0;
+    border-radius: 50%;
+}
+#about p {
+    padding-top: 20px;
+    font-size: larger;
+    color: var(--main-dark);
+}
+#about .container div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/******* EXPERIENCE ********/
+
+.white {
+    background-color: var(--main-light);
+}
+
+#exp img {
+    width: 100%;
+    border-radius: 5px;
+    border: var(--forth-color) solid 1px;
+}
+.img-div{
+    min-width: 300px;
+    max-width: 300px;
+}
+.parent {
+    display: flex;
+    padding-bottom: 50px;
+}
+.text-container {
+    padding-left: 30px;
+}
+
+/********* PROJECTS *********/
+
+#projects {
+    padding-top: 0px;
+}
+
+#projects img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.box-container {
+    background-color: var(--third-color);
+    display: grid;
+    grid-template-columns: minmax(300px, 400px) minmax(300px, 400px) minmax(300px, 400px);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.img-container{
+    margin-bottom: 20px;
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/********* CONTACT *********/
+
+.full {
+    background-image: linear-gradient(rgba(80, 100, 160, 0.4), rgba(80, 100, 160, 0.4)),
+    url(../img/keyboard.jpg);
+    padding-bottom: 20px;
+}
+#contact h2 {
+    color: var(--main-light) !important;
+}
+form {
+    width: 60%;
+    margin: 2rem auto;
+}
+#contact input {
+    margin-bottom: 10px;
+}
+#contact button {
+    width: 150px;
+    height: 43px;
+    font-size: 1.2rem;
+    background-color: var(--main-light);
+    color: var(--main-dark);
+    border: none;
+}
+#contact button:hover{
+    border: var(--main-dark) 1px solid;
+}
+
+/******** FOOTER *********/
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/bg-img.jpg);
+    color: var(--main-light) !important;
+}
+footer svg {
+    height: 35px;
+    width: 35px;
+    margin: 20px;
+    color: var(--main-light) !important;
+}
+footer svg:hover {
+    width: 38px;
+    height: 38px;
+}
+/******** RESPONSIVITY ********/
+
+@media (max-width: 1200px) {
+    form {
+        width: 70%;
+    }
+}
+@media (max-width: 991px){
+    .box-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+    form {
+        width: 100%;
+    }
+
+}
+@media (max-width: 767px){
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #project img {
+        width: 100%;
+        padding-right: 0;
+        display: inline;
+        object-fit: cover;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .parent {
+        flex-wrap: wrap;
+    }
+    .img-div{
+        max-width: 500px;
+    }
+    .text-container {
+        padding: 10px 10px 0 0;
+    }
+
+}
+@media (min-width: 1200px){
+    .box-container{
+        gap: 40px;
+    }
+
+}
+@media (min-width: 1600px){
+    .box-container{
+        gap: 50px;
+    }
+}

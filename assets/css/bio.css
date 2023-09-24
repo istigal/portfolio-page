@@ -1,0 +1,137 @@
+* {
+    background-color: F8F0E5;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+body {
+    padding: 0 50px;
+}
+.heading {
+    background-color: EADBC8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+h1 {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px 0;
+    background-color: EADBC8;
+    color: 0F2C59;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+.img {
+    border: 5px solid whitesmoke;
+    border-radius: 3%;
+    width: 150px;
+}
+h2 {
+    background-color: EADBC8;
+    color: 0F2C59;
+    padding: 20px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+h3 {
+    color: 0F2C59;
+
+}
+
+li {
+    padding: 10px;
+    list-style: square;
+}
+.work {
+    padding-left: 10px;
+}
+.workplace {
+    list-style: none;
+}
+p {
+    padding: 10px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;    
+}
+.wrapper ul li{
+    background-color: #EADBC8;
+    list-style: none;
+    text-align: center;
+}
+.wrapper ul {
+    background-color: #EADBC8;
+    padding-left: 0;
+}
+.tcn {
+    background-color: #EADBC8;
+    margin: 0 0px 20px 5px ;
+    padding: 0 20px;
+    border-radius: 3%;  
+    min-width: 100px;  
+    width: 120px;
+}
+.growing {
+    padding-left: 20px;
+}
+footer {
+    text-align: center;
+    padding: 50px;
+    margin-top: -1;
+    background-color: DAC0A3;
+}
+hr {
+    margin-bottom: 0;
+}
+.other {
+    color: 0F2C59;
+    list-style: none;
+}
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hobbies h2 {
+    width: 100%;
+    text-align: center;
+}
+.hobbies * {
+    list-style: none;
+}
+.hobbies a {
+    padding: 30px;
+}
+
+@media (max-width: 780px) {
+    body {
+        padding: 0 20px;
+        margin: 0 20px 20px 10px ;
+    }
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    .tcn {
+       width: 200px;
+    }
+}
+@media (min-width: 1200px){
+    body {
+        padding: 0 200px;
+    }
+    .tcn {
+        width: 150px;
+        margin: 0 5px 10px 0
+    }
+}
+@media (min-width: 1600px){
+    body {
+        padding: 0 400px;
+    }
+}
