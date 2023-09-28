@@ -1,5 +1,5 @@
 :root {
-    --main-light: #fcf8f2;
+    --main-light: #fffcf3;
     --main-dark: #213555;
     --third-color: #e6f0fc;
     --forth-color: #4F709C;
@@ -20,8 +20,7 @@
 }
 .header a:hover {
     color: whitesmoke;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
-
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 .navbar {
   background: none;
@@ -121,6 +120,14 @@ body {
     padding-top: 0px;
 }
 
+#projects h2 {
+    padding-bottom: 0;
+}
+.project-container{
+    display: flex;
+    flex-direction: column;
+}
+
 #projects img {
     width: 100%;
     border-radius: 5px;
@@ -140,6 +147,14 @@ body {
     max-width: 500px;
     object-fit: cover;
     border-radius: 5px;
+}
+#projects a {
+    text-decoration: none;
+    color: var(--main-dark)
+}
+
+#projects a:hover{
+    color: var(--forth-color);
 }
 
 
@@ -187,10 +202,11 @@ footer svg {
     margin: 20px;
     color: var(--main-light) !important;
 }
+
 footer svg:hover {
-    width: 38px;
-    height: 38px;
+    color: var(--third-color) !important;
 }
+
 /******** RESPONSIVITY ********/
 
 @media (max-width: 1200px) {
